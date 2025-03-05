@@ -49,6 +49,6 @@ kotlin {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version" // Update to jdk8
     implementation 'com.github.scottyab:rootbeer:0.1.0'
 }
