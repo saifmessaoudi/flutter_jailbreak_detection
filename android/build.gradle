@@ -29,12 +29,23 @@ android {
     namespace "appmire.be.flutterjailbreakdetection"
     compileSdkVersion 33
 
+    // Add Java compatibility settings
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
         minSdkVersion 17
     }
+}
+
+// Add Kotlin JVM toolchain configuration
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {
